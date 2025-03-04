@@ -1,12 +1,18 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React from "react";
+import { Header } from "@/components/layout/Header";
+import { BottomNav } from "@/components/layout/BottomNav";
+import { Categories } from "@/components/features/Categories";
+import { NewsFeed } from "@/components/features/NewsFeed";
+import { FloatingButton } from "@/components/ui/FloatingButton";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen w-full bg-[#141414]">
+      <Header />
+      <Categories />
+      <NewsFeed />
+      <FloatingButton />
+      <BottomNav />
     </div>
   );
 };
